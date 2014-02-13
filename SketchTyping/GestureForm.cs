@@ -123,7 +123,7 @@ namespace SketchTyping
                         var refStroke = ges.Value[0];
                         float cost = owner.sketchTyping.MinMatchingCost(inputStroke, refStroke);
                         Console.Write(cost + " ");
-                        cost = cost * cost;
+            //            cost = cost * cost;
                         total += cost;
                         costs.Add(cost);
                     }
@@ -139,7 +139,7 @@ namespace SketchTyping
                 float variance = sum / costs.Count;   // 分散
                 float stddev = (float)Math.Sqrt(variance);    // 標準偏差
 
-                float eval = mean / stddev;
+                float eval = mean ;/// stddev;
                 Console.Write("[" + eval + "]\n");
                 comCosts[com] = eval;
             }

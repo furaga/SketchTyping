@@ -1,0 +1,13 @@
+# git ignore file
+*.exe
+*.pdb
+*.dll
+*.cache
+SketchTyping/bin/
+SketchTyping/obj/
+SketchTypingDataCollect/bin/
+SketchTypingDataCollect/obj/
+SketchTypingLib/bin/
+SketchTypingLib/obj/
+SketchTypingVSAddin/bin/
+SketchTypingVSAddin/obj/

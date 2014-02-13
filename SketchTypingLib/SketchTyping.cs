@@ -136,7 +136,7 @@ namespace FLib
                 richTextBox1.Text = text;
             }
 
-            return dp[stroke1.Count * stroke2.Count - 1];
+            return dp[stroke1.Count * stroke2.Count - 1] / stroke1.Count;
         }
 
     }

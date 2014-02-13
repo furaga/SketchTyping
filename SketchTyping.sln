@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingDataCollect", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingLib", "SketchTypingLib\SketchTypingLib.csproj", "{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingVSAddin", "SketchTypingVSAddin\SketchTypingVSAddin.csproj", "{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,16 @@ Global
 		{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A3C82E47-1FE1-4837-B8C4-BAFE8123DF62}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
