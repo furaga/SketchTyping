@@ -1,0 +1,6 @@
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.pkgdef
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\extension.vsixmanifest
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.pdb
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypingLib.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypingLib.pdb

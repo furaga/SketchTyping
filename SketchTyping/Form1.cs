@@ -77,7 +77,7 @@ namespace SketchTyping
             float ratio = (float)canvas.Width / canvasImage.Width;
             int w = (int)(ratio * canvasImage.Width);
             int h = (int)(ratio * canvasImage.Height);
-            e.Graphics.DrawImage(canvasImage, new Rectangle(0, canvas.Height / 2 - h / 2, w, h));
+            e.Graphics.DrawImage(canvasImage, new Rectangle(0, 0, w, h));
         }
 
         private void canvas_Resize(object sender, EventArgs e)

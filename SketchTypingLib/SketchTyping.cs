@@ -139,5 +139,56 @@ namespace FLib
             return dp[stroke1.Count * stroke2.Count - 1] / stroke1.Count;
         }
 
+        public string GetMatchingCommand(string inputText, List<SketchTypeCommand> commands, out float minCost, TextBox textBox = null)
+        {
+            string text = "";
+            if (textBox != null) textBox.Text = "";
+            var inputStroke = GetStroke(inputText);
+            Dictionary<SketchTypeCommand, float> comCosts = new Dictionary<SketchTypeCommand, float>();
+            foreach (var com in commands)
+            {
+                if (textBox != null) textBox.Text += (com.Text + ": ");
+                float total = 0;
+                List<float> costs = new List<float>();
+                int cnt = 0;
+                if (com.gestureList.Count <= 0) continue;
+                foreach (var ges in com.gestureList)
+                {
+                    if (ges.Value.Count >= 1)
+                    {
+                        cnt++;
+                        var refStroke = ges.Value[0];
+                        float cost = MinMatchingCost(inputStroke, refStroke);
+                        if (textBox != null) textBox.Text += cost + " ";
+                        //            cost = cost * cost;
+                        total += cost;
+                        costs.Add(cost);
+                    }
+                }
+
+                float mean = total / costs.Count;        // 平均
+                float sum = 0;
+                foreach (int i in costs)
+                {
+                    float d = i - mean;
+                    sum += d * d;
+                }
+                float variance = sum / costs.Count;   // 分散
+                float stddev = (float)Math.Sqrt(variance);    // 標準偏差
+
+                float eval = mean;/// stddev;
+                if (textBox != null) textBox.Text += "[" + eval + "]\r\n";
+                comCosts[com] = eval;
+            }
+
+            var sorted = comCosts.OrderBy(kv => kv.Value).ToArray();
+            if (textBox != null) textBox.Text += string.Join("<", sorted) + "\r\n";
+
+            text = sorted.First().Key.Text;
+
+            minCost = sorted.First().Value;
+            return text;
+        }
+
     }
 }

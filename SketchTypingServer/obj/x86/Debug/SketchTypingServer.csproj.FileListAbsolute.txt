@@ -1,0 +1,13 @@
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\SketchTypingServer.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\SketchTypingServer.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.Form1.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.Properties.Resources.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.csproj.GenerateResource.Cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\SketchTypingLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\FLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\OpenCvSharp.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\SketchTypingLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\bin\Debug\FLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingServer\obj\x86\Debug\SketchTypingServer.csprojResolveAssemblyReference.cache
