@@ -4,3 +4,8 @@ C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Compa
 C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\extension.vsixmanifest
 C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.pdb
 C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypingLib.pdb
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\FLib.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\OpenCvSharp.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\Resources\heatmap.png
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\Resources\planter4uno.png
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\FLib.pdb

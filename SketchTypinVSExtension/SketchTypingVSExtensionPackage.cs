@@ -30,6 +30,8 @@ namespace Company.SketchTypinVSExtension
     // This attribute is needed to let the shell know that this package exposes some menus.
     [ProvideMenuResource("Menus.ctmenu", 1)]
     // This attribute registers a tool window exposed by this package.
+    [ProvideToolWindow(typeof(AnnotationSketchToolWindow))]
+    // 追加　by furaga
     [ProvideToolWindow(typeof(SketchTypingToolWindow))]
     [Guid(GuidList.guidSketchTypinVSExtensionPkgString)]
     public sealed class SketchTypingVSExtensionPackage : Package
@@ -46,17 +48,37 @@ namespace Company.SketchTypinVSExtension
             Trace.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering constructor for: {0}", this.ToString()));
         }
 
+        // 追加　by furaga
         /// <summary>
         /// This function is called when the user clicks the menu item that shows the 
         /// tool window. See the Initialize method to see how the menu item is associated to 
         /// this function using the OleMenuCommandService service and the MenuCommand class.
         /// </summary>
-        private void ShowToolWindow(object sender, EventArgs e)
+        private void ShowSketchTypingToolWindow(object sender, EventArgs e)
         {
             // Get the instance number 0 of this tool window. This window is single instance so this instance
             // is actually the only one.
             // The last flag is set to true so that if the tool window does not exists it will be created.
             ToolWindowPane window = this.FindToolWindow(typeof(SketchTypingToolWindow), 0, true);
+            if ((null == window) || (null == window.Frame))
+            {
+                throw new NotSupportedException(Resources.CanNotCreateWindow);
+            }
+            IVsWindowFrame windowFrame = (IVsWindowFrame)window.Frame;
+            Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure(windowFrame.Show());
+        }
+
+        /// <summary>
+        /// This function is called when the user clicks the menu item that shows the 
+        /// tool window. See the Initialize method to see how the menu item is associated to 
+        /// this function using the OleMenuCommandService service and the MenuCommand class.
+        /// </summary>
+        private void ShowAnnotationSketchToolWindow(object sender, EventArgs e)
+        {
+            // Get the instance number 0 of this tool window. This window is single instance so this instance
+            // is actually the only one.
+            // The last flag is set to true so that if the tool window does not exists it will be created.
+            ToolWindowPane window = this.FindToolWindow(typeof(AnnotationSketchToolWindow), 0, true);
             if ((null == window) || (null == window.Frame))
             {
                 throw new NotSupportedException(Resources.CanNotCreateWindow);
@@ -85,8 +107,13 @@ namespace Company.SketchTypinVSExtension
             {
                 // Create the command for the tool window
                 CommandID toolwndCommandID = new CommandID(GuidList.guidSketchTypinVSExtensionCmdSet, (int)PkgCmdIDList.cmdidSketchTypingToolWindow);
-                MenuCommand menuToolWin = new MenuCommand(ShowToolWindow, toolwndCommandID);
-                mcs.AddCommand( menuToolWin );
+                MenuCommand menuToolWin = new MenuCommand(ShowSketchTypingToolWindow, toolwndCommandID);
+                mcs.AddCommand(menuToolWin);
+
+                // 追加　by furaga
+                CommandID toolwndCommandID1 = new CommandID(GuidList.guidSketchTypinVSExtensionCmdSet, (int)PkgCmdIDList.cmdidAnnotationSketchToolWindow);
+                MenuCommand menuToolWin1 = new MenuCommand(ShowAnnotationSketchToolWindow, toolwndCommandID1);
+                mcs.AddCommand(menuToolWin1);
             }
         }
         #endregion

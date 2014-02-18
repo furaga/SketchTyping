@@ -46,7 +46,14 @@ namespace Company.SketchTypinVSExtension
             }
         }
 
-        EnvDTE.Document ActiveDocument { get { return SketchTypingVSExtension.TextAdornment1Factory.dte2.ActiveDocument; } }
+        EnvDTE.Document ActiveDocument
+        {
+            get
+            {
+                if (SketchTypingVSExtension.TextAdornment1Factory.dte2 == null) return null;
+                return SketchTypingVSExtension.TextAdornment1Factory.dte2.ActiveDocument;
+            }
+        }
 
         int syntaxRemedyWordCount = 0;
         const string StartSyntaxWord = @"/*[*/";

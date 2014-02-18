@@ -69,9 +69,18 @@
         </Strings>
       </Button>
 
+      <!--追加 by furaga -->
+      <Button guid="guidSketchTypinVSExtensionCmdSet" id="cmdidAnnotationSketchToolWindow" priority="0x0100" type="Button">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>
+        <Icon guid="guidImages" id="bmpPic2" />
+        <Strings>
+          <CommandName>cmdidAnnotationSketchToolWindow</CommandName>
+          <ButtonText>AnnotationSketchToolWindow</ButtonText>
+        </Strings>
+      </Button>
 
     </Buttons>
-   
+
     <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
     <Bitmaps>
       <!--  The bitmap id is defined in a way that is a little bit different from the others: 
@@ -98,6 +107,8 @@
 
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="cmdidSketchTypingToolWindow" value="0x0101" />
+      <!--追加 by furaga -->
+      <IDSymbol name="cmdidAnnotationSketchToolWindow" value="0x0102" />
     </GuidSymbol>
     
     

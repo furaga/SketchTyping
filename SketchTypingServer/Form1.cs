@@ -78,7 +78,7 @@ namespace SketchTypingServer
 
             // ジェスチャ認識の準備
             hooker.OnKeyHook = OnKeyHook;
-            timer.Interval = 200;
+            timer.Interval = 300;
             timer.Tick += new EventHandler(timer_Tick);
             hooker.Hook();
         }

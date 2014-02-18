@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Media.Imaging;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
 using Microsoft.VisualStudio.Text.Formatting;
-using Microsoft.VisualStudio.Utilities;
 using EnvDTE;
 using EnvDTE80;
 using Microsoft.VisualStudio.Shell;
@@ -26,22 +26,27 @@ namespace SketchTypingVSExtension
     internal sealed class TextAdornment1Factory : ILineTransformSourceProvider, IWpfTextViewCreationListener
     {
         public static IWpfTextView _view;
+        public static DTE2 dte2;
+        public static Dictionary<string, BitmapSource> sketchImages = new Dictionary<string, BitmapSource>();
+
+
         [Import]
         internal SVsServiceProvider ServiceProvider = null;
-        public static DTE2 dte2;
+
+        
         /// <summary>
         /// Defines the adornment layer for the adornment. This layer is ordered 
         /// after the selection layer in the Z-order
         /// </summary>
         [Export(typeof(AdornmentLayerDefinition))]
         [Name("TextAdornment1")]
-        [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]
+        [Order(After = PredefinedAdornmentLayers.Text)]
         [TextViewRole(PredefinedTextViewRoles.Document)]
         public AdornmentLayerDefinition editorAdornmentLayer = null;
 
         ILineTransformSource ILineTransformSourceProvider.Create(IWpfTextView view)
         {
-            return new LineTransformSource();//(0, 0, 1);
+            return new LineTransformSource(view);
         }
 
         /// <summary>
