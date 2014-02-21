@@ -1,0 +1,15 @@
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\SketchTypingSketchSearch.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\SketchTypingSketchSearch.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.Form1.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.Properties.Resources.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.csproj.GenerateResource.Cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\SketchTypingLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\FLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\OpenCvSharp.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\SketchTypingLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\FLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\obj\x86\Debug\SketchTypingSketchSearch.csprojResolveAssemblyReference.cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\Resources\heatmap.png
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingSketchSearch\bin\Debug\Resources\planter4uno.png

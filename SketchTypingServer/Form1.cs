@@ -110,7 +110,7 @@ namespace SketchTypingServer
         {
             float minCost;
             string commandName = sketchTyping.GetMatchingCommand(inputText, commands, out minCost, textBox1);
-            if (minCost < 0.55f)
+            if (minCost < threshold)
             {
                 server.SendQuery(commandName);
             }
@@ -186,6 +186,17 @@ namespace SketchTypingServer
         private void canvas_Resize(object sender, EventArgs e)
         {
             canvas.Invalidate();
+        }
+
+        float threshold = 0.55f;
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            double tmp;
+            if (double.TryParse(textBox2.Text, out tmp))
+            {
+                threshold = (float)tmp;
+            }
         }
     }
 }

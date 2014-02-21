@@ -93,7 +93,7 @@ namespace SketchTypingVSExtension
                         if (!TextAdornment1Factory.sketchImages.ContainsKey(filePath) && System.IO.File.Exists(filePath))
                         {
                             TextAdornment1Factory.sketchImages[filePath] =
-                                BitmapHandler.CreateBitmapSourceFromBitmap(
+                                BitmapHandler.CreateBitmapSource(
                                     BitmapHandler.CreateThumbnail(
                                         BitmapHandler.FromSketchFile(
                                             filePath,

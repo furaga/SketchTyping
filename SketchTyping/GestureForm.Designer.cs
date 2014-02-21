@@ -51,6 +51,7 @@
             this.Controls.Add(this.canvas);
             this.Name = "GestureForm";
             this.Text = "GestureForm";
+            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.canvas)).EndInit();
             this.ResumeLayout(false);
 

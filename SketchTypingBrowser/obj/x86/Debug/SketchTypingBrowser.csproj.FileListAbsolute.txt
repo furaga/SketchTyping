@@ -1,0 +1,13 @@
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\SketchTypingBrowser.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\SketchTypingBrowser.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\SketchTypingLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\FLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\OpenCvSharp.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\SketchTypingLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\bin\Debug\FLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.csprojResolveAssemblyReference.cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.Form1.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.Properties.Resources.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.csproj.GenerateResource.Cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypingBrowser\obj\x86\Debug\SketchTypingBrowser.pdb

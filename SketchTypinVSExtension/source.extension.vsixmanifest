@@ -5,8 +5,8 @@
     <Author>Company</Author>
     <Version>1.0</Version>
     <Description xml:space="preserve">Information about my package</Description>
-    <Locale>1033</Locale>
-    <InstalledByMsi>false</InstalledByMsi>
+    <Locale>1041</Locale>
+    <InstalledByMsi>true</InstalledByMsi>
     <SupportedProducts>
       <VisualStudio Version="10.0">
         <Edition>Pro</Edition>

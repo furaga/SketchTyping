@@ -167,7 +167,7 @@ namespace SketchTypingPowerPointAddIn
                         case "CancelText":
                             if (FocusedShapes.Count >= 1)
                             {
-                                FocusedShapes[1].TextFrame.TextRange.Text = tmpText;
+                                FocusedShapes[1].TextFrame.TextRange.Text = "";//  tmpText;
                             }
                             if (newShape != null)
                             {
