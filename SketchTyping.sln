@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTyping", "SketchTyping\SketchTyping.csproj", "{5F7E03C9-D6B9-492F-BE3E-F6F2098304F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLib", "..\..\..\Animator\HyperZatsukora\HyperZatsukora\FLib\FLib.csproj", "{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingDataCollect", "SketchTypingDataCollect\SketchTypingDataCollect.csproj", "{515EE07C-D9F4-446E-B942-7C463B308C8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingLib", "SketchTypingLib\SketchTypingLib.csproj", "{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}"
@@ -20,6 +18,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingSketchSearch", "SketchTypingSketchSearch\SketchTypingSketchSearch.csproj", "{4DC0B633-60F8-485A-A7A6-D6234C594F9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SketchTypingBrowser", "SketchTypingBrowser\SketchTypingBrowser.csproj", "{033F2E77-E01F-4B7A-B26D-7FA494318DE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FLib", "FLib\FLib.csproj", "{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,16 +41,6 @@ Global
 		{5F7E03C9-D6B9-492F-BE3E-F6F2098304F8}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5F7E03C9-D6B9-492F-BE3E-F6F2098304F8}.Release|x86.ActiveCfg = Release|x86
 		{5F7E03C9-D6B9-492F-BE3E-F6F2098304F8}.Release|x86.Build.0 = Release|x86
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|x86.ActiveCfg = Release|Any CPU
 		{515EE07C-D9F4-446E-B942-7C463B308C8D}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{515EE07C-D9F4-446E-B942-7C463B308C8D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{515EE07C-D9F4-446E-B942-7C463B308C8D}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -131,6 +121,16 @@ Global
 		{033F2E77-E01F-4B7A-B26D-7FA494318DE4}.Release|Mixed Platforms.Build.0 = Release|x86
 		{033F2E77-E01F-4B7A-B26D-7FA494318DE4}.Release|x86.ActiveCfg = Release|x86
 		{033F2E77-E01F-4B7A-B26D-7FA494318DE4}.Release|x86.Build.0 = Release|x86
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

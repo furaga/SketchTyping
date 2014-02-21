@@ -209,6 +209,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FLib\FLib.csproj">
+      <Project>{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}</Project>
+      <Name>FLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SketchTypingLib\SketchTypingLib.csproj">
       <Project>{7DC58EF5-77B4-433F-9BA3-78FB71341DFE}</Project>
       <Name>SketchTypingLib</Name>

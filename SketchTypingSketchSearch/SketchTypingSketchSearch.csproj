@@ -77,7 +77,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Animator\HyperZatsukora\HyperZatsukora\FLib\FLib.csproj">
+    <ProjectReference Include="..\FLib\FLib.csproj">
       <Project>{6CDD0F06-50D4-4522-9097-8C4D49D43B0F}</Project>
       <Name>FLib</Name>
     </ProjectReference>
