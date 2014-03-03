@@ -268,5 +268,44 @@ namespace Company.SketchTypinVSExtension
             RefleshSketch();
             canvas.Invalidate();
         }
+
+        private void refButton_Click(object sender, EventArgs e)
+        {
+            if (ActiveDocument != null && SolutionDir != "")
+            {
+                var select = (ActiveDocument.Selection as EnvDTE.TextSelection);
+                if (select != null)
+                {
+                    var start = select.TopPoint.CreateEditPoint();
+                    var end = select.BottomPoint.CreateEditPoint();
+                    var match = EditPointToFunctionDefinition(ref start, ref end);
+                    if (match.Success)
+                    {
+                        label1.Text = match.Groups["FunctionName"].Value;
+
+                        // スケッチ情報をテキストとしてファイル保存
+                        openFileDialog1.RestoreDirectory = true;
+                        openFileDialog1.Filter = "*.bmp,*.png,*.jpg|*.bmp;*.png;*.jpg";
+                        if (openFileDialog1.ShowDialog() == DialogResult.OK)
+                        {
+                            string sketchDir = System.IO.Path.Combine(SolutionDir, "AnnotationSketches");
+                            if (!System.IO.Directory.Exists(sketchDir)) System.IO.Directory.CreateDirectory(sketchDir);
+                            string dst = System.IO.Path.Combine(sketchDir, System.IO.Path.GetFileName(openFileDialog1.FileName));
+                            System.IO.File.Copy(openFileDialog1.FileName, dst);
+                            // スケッチを表示するための文字列（コメント）をコードに追加
+                            end.FindPattern(
+                                match.Value.TrimStart('}', ';').Trim(),
+                                vsFindOptionsValue: (int)EnvDTE.vsFindOptions.vsFindOptionsBackwards);
+                            end.Insert(string.Format("/// AnnotationSketch:{0}\n", System.IO.Path.GetFileName(dst)));
+                            start = select.TopPoint.CreateEditPoint();
+                            end = select.TopPoint.CreateEditPoint();
+                            start.StartOfDocument();
+                            end.EndOfDocument();
+                            start.SmartFormat(end);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

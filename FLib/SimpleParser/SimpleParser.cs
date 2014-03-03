@@ -23,7 +23,7 @@ namespace FLib
             RegexOptions.Compiled | RegexOptions.Multiline);
 
         public const string FUNCTION_DECL_STR =
-            "(^|}|;)\\s*(?<Accessor>(public|private|protected|final|static)\\s+)*" +
+            "(^|}|;)\\s*(?<Accessor>(unsafe|public|private|protected|final|static)\\s+)*" +
             "(?<ReturnType>\\w+)?" +
             "(\\s*\\[\\s*\\])?\\s+(?<FunctionName>[a-zA-Z0-9]+)\\s*\\((?<Arguments>[^\\)]*)\\)\\s*{";
     }

@@ -92,18 +92,31 @@ namespace SketchTypingVSExtension
                         string filePath = System.IO.Path.Combine(sketchDir, subCode.Substring("AnnotationSketch:".Length));
                         if (!TextAdornment1Factory.sketchImages.ContainsKey(filePath) && System.IO.File.Exists(filePath))
                         {
-                            TextAdornment1Factory.sketchImages[filePath] =
-                                BitmapHandler.CreateBitmapSource(
-                                    BitmapHandler.CreateThumbnail(
-                                        BitmapHandler.FromSketchFile(
-                                            filePath,
-                                            400, 300,
-                                            new System.Drawing.Pen(System.Drawing.Brushes.Black, 3),
-                                            System.Drawing.Color.White
-                                        ),
-                                        LineTransformSource.ImageWidth, LineTransformSource.ImageHeight
-                                    )
-                                );
+                            if (filePath.EndsWith(".txt"))
+                            {
+                                TextAdornment1Factory.sketchImages[filePath] =
+                                    BitmapHandler.CreateBitmapSource(
+                                        BitmapHandler.CreateThumbnail(
+                                            BitmapHandler.FromSketchFile(
+                                                filePath,
+                                                400, 300,
+                                                new System.Drawing.Pen(System.Drawing.Brushes.Black, 3),
+                                                System.Drawing.Color.White
+                                            ),
+                                            LineTransformSource.ImageWidth, LineTransformSource.ImageHeight
+                                        )
+                                    );
+                            }
+                            else
+                            {
+                                TextAdornment1Factory.sketchImages[filePath] =
+                                    BitmapHandler.CreateBitmapSource(
+                                        BitmapHandler.CreateThumbnail(
+                                            new System.Drawing.Bitmap(filePath),
+                                            LineTransformSource.ImageWidth, LineTransformSource.ImageHeight
+                                        )
+                                    );
+                            }
                         }
                         if (TextAdornment1Factory.sketchImages.ContainsKey(filePath))
                         {

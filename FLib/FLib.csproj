@@ -39,11 +39,6 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
-    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
-    <Reference Include="OpenCvSharp">
-      <HintPath>..\..\..\..\Resource\opencv\OpenCvSharp.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -61,8 +56,6 @@
   <ItemGroup>
     <Compile Include="SimpleParser\SimpleParser.cs" />
     <Compile Include="SketchTyping\BeautificatedSketch.cs" />
-    <Compile Include="UI\TemplateMatching.cs" />
-    <Compile Include="UI\UI.cs" />
     <Compile Include="Utils\BitmapHandler.cs" />
     <Compile Include="Utils\BitmapIterator.cs" />
     <Compile Include="Utils\DraggablePictureBox.cs">
@@ -79,17 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Skeleton\Joint.cs" />
-    <Compile Include="Skeleton\Skeleton.cs" />
-    <Compile Include="XNA\XNAControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="XNA\XNAService.cs" />
-    <Compile Include="Animator\LazyBrush.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XNA\XNAServiceContainer.cs" />
-    <Compile Include="Animator\TrappedBallSegmentation.cs" />
-    <Compile Include="XNA\XNATexture.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Utils\DraggablePictureBox.resx">
@@ -102,12 +85,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\planter4uno.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <Content Include="Resources\heatmap.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup />

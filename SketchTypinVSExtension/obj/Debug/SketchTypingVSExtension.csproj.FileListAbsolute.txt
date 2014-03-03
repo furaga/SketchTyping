@@ -6,13 +6,9 @@ C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTy
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\SketchTypinVSExtension.vsix
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\FLib.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\SketchTypingLib.dll
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\Microsoft.Xna.Framework.Graphics.dll
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\Microsoft.Xna.Framework.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\OpenCvSharp.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\FLib.pdb
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\SketchTypingLib.pdb
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\Microsoft.Xna.Framework.Graphics.xml
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\Microsoft.Xna.Framework.xml
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypingVSExtension.csprojResolveAssemblyReference.cache
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypingVSExtension.csproj.ResolveComReference.cache
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SkethTypingControlWPF.baml
@@ -24,12 +20,9 @@ C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTy
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\Company.SketchTypinVSExtension.Resources.resources
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypingVSExtension.csproj.GenerateResource.Cache
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypingVSExtension.cto
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSCT.read.1.tlog
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSCT.write.1.tlog
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSPackage.resources.original
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\CtoResourceMerger.cache
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypinVSExtension.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypinVSExtension.pdb
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypinVSExtension.pkgdef
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypinVSExtension.latest.pkgdef
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\extension.vsixmanifest
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\extension.vsixmanifest

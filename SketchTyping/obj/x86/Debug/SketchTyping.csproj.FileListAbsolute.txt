@@ -1,10 +1,7 @@
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\Resources\heatmap.png
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\Resources\planter4uno.png
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\SketchTyping.exe
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\SketchTyping.pdb
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\FLib.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\SketchTypingLib.dll
-C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\OpenCvSharp.dll
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\FLib.pdb
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\bin\Debug\SketchTypingLib.pdb
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTyping\obj\x86\Debug\SketchTyping.csprojResolveAssemblyReference.cache

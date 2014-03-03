@@ -15,3 +15,25 @@ c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Compa
 c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\SketchTypingVSExtension\1.0\\Resources\planter4uno.png
 c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\SketchTypingVSExtension\1.0\\FLib.pdb
 c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\SketchTypingVSExtension\1.0\\SketchTypingLib.pdb
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\FLib.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypingLib.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.pkgdef
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\extension.vsixmanifest
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\OpenCvSharp.dll
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypinVSExtension.pdb
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\Resources\heatmap.png
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\Resources\planter4uno.png
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\FLib.pdb
+C:\Users\furag_000\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Company\SketchTypinVSExtension\1.0\\SketchTypingLib.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\SketchTypinVSExtension.dll
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\FLib.dll
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\SketchTypingLib.dll
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\SketchTypinVSExtension.pkgdef
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\extension.vsixmanifest
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\OpenCvSharp.dll
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\SketchTypinVSExtension.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\Resources\heatmap.png
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\Resources\planter4uno.png
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\FLib.pdb
+C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Company\\SketchTypingLib.pdb
