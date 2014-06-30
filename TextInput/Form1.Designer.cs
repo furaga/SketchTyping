@@ -33,15 +33,12 @@
             this.gestureComboBox = new System.Windows.Forms.ComboBox();
             this.loadButton = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.log = new System.Windows.Forms.Label();
             this.editButton = new System.Windows.Forms.Button();
             this.shiftCheckbox = new System.Windows.Forms.CheckBox();
             this.altCheckbox = new System.Windows.Forms.CheckBox();
             this.ctrlCheckbox = new System.Windows.Forms.CheckBox();
             this.keyCombobox = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.thresholdNumeriUpDown = new System.Windows.Forms.NumericUpDown();
-            this.shortcutRButton = new System.Windows.Forms.RadioButton();
-            this.alwaysRButton = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox = new System.Windows.Forms.RichTextBox();
@@ -49,7 +46,6 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.thresholdNumeriUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // startButton
@@ -101,15 +97,12 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.log);
             this.splitContainer1.Panel1.Controls.Add(this.editButton);
             this.splitContainer1.Panel1.Controls.Add(this.shiftCheckbox);
             this.splitContainer1.Panel1.Controls.Add(this.altCheckbox);
             this.splitContainer1.Panel1.Controls.Add(this.ctrlCheckbox);
             this.splitContainer1.Panel1.Controls.Add(this.keyCombobox);
-            this.splitContainer1.Panel1.Controls.Add(this.label3);
-            this.splitContainer1.Panel1.Controls.Add(this.thresholdNumeriUpDown);
-            this.splitContainer1.Panel1.Controls.Add(this.shortcutRButton);
-            this.splitContainer1.Panel1.Controls.Add(this.alwaysRButton);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.loadButton);
@@ -120,9 +113,18 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.textBox);
-            this.splitContainer1.Size = new System.Drawing.Size(307, 330);
-            this.splitContainer1.SplitterDistance = 231;
+            this.splitContainer1.Size = new System.Drawing.Size(307, 245);
+            this.splitContainer1.SplitterDistance = 160;
             this.splitContainer1.TabIndex = 15;
+            // 
+            // log
+            // 
+            this.log.AutoSize = true;
+            this.log.Location = new System.Drawing.Point(6, 145);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(35, 12);
+            this.log.TabIndex = 26;
+            this.log.Text = "label3";
             // 
             // editButton
             // 
@@ -137,7 +139,7 @@
             // shiftCheckbox
             // 
             this.shiftCheckbox.AutoSize = true;
-            this.shiftCheckbox.Location = new System.Drawing.Point(136, 190);
+            this.shiftCheckbox.Location = new System.Drawing.Point(136, 120);
             this.shiftCheckbox.Name = "shiftCheckbox";
             this.shiftCheckbox.Size = new System.Drawing.Size(48, 16);
             this.shiftCheckbox.TabIndex = 24;
@@ -148,7 +150,7 @@
             // altCheckbox
             // 
             this.altCheckbox.AutoSize = true;
-            this.altCheckbox.Location = new System.Drawing.Point(185, 190);
+            this.altCheckbox.Location = new System.Drawing.Point(185, 120);
             this.altCheckbox.Name = "altCheckbox";
             this.altCheckbox.Size = new System.Drawing.Size(39, 16);
             this.altCheckbox.TabIndex = 23;
@@ -159,7 +161,9 @@
             // ctrlCheckbox
             // 
             this.ctrlCheckbox.AutoSize = true;
-            this.ctrlCheckbox.Location = new System.Drawing.Point(88, 190);
+            this.ctrlCheckbox.Checked = true;
+            this.ctrlCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ctrlCheckbox.Location = new System.Drawing.Point(88, 120);
             this.ctrlCheckbox.Name = "ctrlCheckbox";
             this.ctrlCheckbox.Size = new System.Drawing.Size(43, 16);
             this.ctrlCheckbox.TabIndex = 22;
@@ -170,66 +174,21 @@
             // keyCombobox
             // 
             this.keyCombobox.FormattingEnabled = true;
-            this.keyCombobox.Location = new System.Drawing.Point(230, 188);
+            this.keyCombobox.Location = new System.Drawing.Point(230, 118);
             this.keyCombobox.Name = "keyCombobox";
             this.keyCombobox.Size = new System.Drawing.Size(64, 20);
             this.keyCombobox.TabIndex = 21;
+            this.keyCombobox.Text = "X";
             this.keyCombobox.TextChanged += new System.EventHandler(this.keyCombobox_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(87, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "閾値（％）";
-            // 
-            // numericUpDown1
-            // 
-            this.thresholdNumeriUpDown.Location = new System.Drawing.Point(146, 134);
-            this.thresholdNumeriUpDown.Name = "numericUpDown1";
-            this.thresholdNumeriUpDown.Size = new System.Drawing.Size(148, 19);
-            this.thresholdNumeriUpDown.TabIndex = 19;
-            this.thresholdNumeriUpDown.Value = new decimal(new int[] {
-            80,
-            0,
-            0,
-            0});
-            this.thresholdNumeriUpDown.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // shortcutRButton
-            // 
-            this.shortcutRButton.AutoSize = true;
-            this.shortcutRButton.Location = new System.Drawing.Point(14, 166);
-            this.shortcutRButton.Name = "shortcutRButton";
-            this.shortcutRButton.Size = new System.Drawing.Size(196, 16);
-            this.shortcutRButton.TabIndex = 18;
-            this.shortcutRButton.Text = "ショートカットキーを押したら認識開始";
-            this.shortcutRButton.UseVisualStyleBackColor = true;
-            this.shortcutRButton.CheckedChanged += new System.EventHandler(this.shortcutRButton_CheckedChanged);
-            // 
-            // alwaysRButton
-            // 
-            this.alwaysRButton.AutoSize = true;
-            this.alwaysRButton.Checked = true;
-            this.alwaysRButton.Location = new System.Drawing.Point(14, 112);
-            this.alwaysRButton.Name = "alwaysRButton";
-            this.alwaysRButton.Size = new System.Drawing.Size(252, 16);
-            this.alwaysRButton.TabIndex = 17;
-            this.alwaysRButton.TabStop = true;
-            this.alwaysRButton.Text = "常に認識（一致度が閾値を超えたら文字を出す）";
-            this.alwaysRButton.UseVisualStyleBackColor = true;
-            this.alwaysRButton.CheckedChanged += new System.EventHandler(this.alwaysRButton_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(131, 12);
             this.label2.TabIndex = 16;
-            this.label2.Text = "認識方式";
+            this.label2.Text = "認識開始ショートカットキー";
             // 
             // label1
             // 
@@ -245,7 +204,7 @@
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox.Location = new System.Drawing.Point(0, 0);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(307, 95);
+            this.textBox.Size = new System.Drawing.Size(307, 81);
             this.textBox.TabIndex = 0;
             this.textBox.Text = "";
             // 
@@ -253,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 330);
+            this.ClientSize = new System.Drawing.Size(307, 245);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -263,7 +222,6 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.thresholdNumeriUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,13 +238,10 @@
         private System.Windows.Forms.CheckBox altCheckbox;
         private System.Windows.Forms.CheckBox ctrlCheckbox;
         private System.Windows.Forms.ComboBox keyCombobox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown thresholdNumeriUpDown;
-        private System.Windows.Forms.RadioButton shortcutRButton;
-        private System.Windows.Forms.RadioButton alwaysRButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox textBox;
+        private System.Windows.Forms.Label log;
     }
 }
 

@@ -26,7 +26,7 @@ namespace SketchTypingDataCollect
             InitializeComponent();
             this.owner = owner;
             hooker.OnKeyHook = OnKeyHook;
-            keyboardImage = new Bitmap("../../../Resource/keyboard.png");
+            keyboardImage = new Bitmap("keyboard.png");
             sketchTyping = new SketchTyping(keyboardImage);
             canvasImage = new Bitmap(keyboardImage);
         }

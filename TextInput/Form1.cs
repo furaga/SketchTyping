@@ -14,15 +14,13 @@ namespace TextInput
 {
     public partial class Form1 : Form
     {
-        public Hooker hooker = new Hooker(); 
+        public Hooker hooker = new Hooker();
         public FLib.SketchTyping sketchTyping;
         public List<SketchTypeCommand> trainData = new List<SketchTypeCommand>();
 
         string gestureFile = "";
 
-        bool alwaysRecognition = true;
         Timer timer = new Timer();
-
 
         public Form1()
         {
@@ -31,44 +29,63 @@ namespace TextInput
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            gestureFile = GetGestureFile();
-            alwaysRecognition = GetRecognitionMode();
-            threshold = GetThreshold();
+            // init variables
+            gestureFile = Path.GetFullPath("Gestures/gestureSimple.txt");
             shortcutKey = GetShortcutKey();
 
-            if (File.Exists("keyboard.png"))
+            // load keyboard image
+            if (!File.Exists("keyboard.png"))
             {
-                using (var bmp = new Bitmap("keyboard.png"))
-                    sketchTyping = new SketchTyping(new Bitmap(bmp));
-            }
-            else
-            {
-                MessageBox.Show("キーボード画像（\"keyboard.png\"）が必要です");
+                MessageBox.Show("キーボード画像 keyboard.png が見つかりません");
                 Application.Exit();
             }
 
+            using (var bmp = new Bitmap("keyboard.png"))
+                sketchTyping = new SketchTyping(new Bitmap(bmp));
+
+            // set gesture combobox
             if (Directory.Exists("Gestures"))
                 gestureComboBox.Items.AddRange(Directory.GetFiles("Gestures").Where(f => f.EndsWith(".txt")).ToArray());
-
-            gestureComboBox.Text = Path.GetFullPath("Gestures/gestureSimple.txt");
+            gestureComboBox.Text = gestureFile;
 
             for (int i = 'A'; i <= 'Z'; i++)
                 keyCombobox.Items.Add("" + (char)i);
 
-            timer.Interval = 250;
+            // load train data
+            if (!File.Exists(gestureFile))
+            {
+                MessageBox.Show("ジェスチャファイル " + gestureFile + " が見つかりません");
+                Application.Exit();
+            }
+            trainData = SketchTypeCommand.LoadCommands(gestureFile, 64, 64);
+
+            DebugLog("load gestures: # = " + (trainData == null ? "null" : "" + trainData.Count));
+
+            // set timer
+            timer.Interval = 300;
             timer.Tick += new EventHandler(timer_Tick);
 
             UpdateGUI();
+        }
+
+        void DebugLog(string mes)
+        {
+            log.Text = mes;
+            textBox.Text += mes + "\n";
         }
 
         void timer_Tick(object sender, EventArgs e)
         {
             float cost;
             string gesture = sketchTyping.GetMatchingCommand(inputText, trainData, out cost);
-            Action(gesture);
-            textBox.Text += string.Format("inputText = {0}, gesture = {1}, const = {2}\n", inputText, gesture, cost);
+            DebugLog(string.Format("inputText = {0}, gesture = {1}, const = {2}", inputText, gesture, cost));
+            recogMode = false;
+            if (recogMode)
+                DebugLog("Finish gesture recognition");
             inputText = "";
             timer.Enabled = false;
+
+            Action(gesture);
         }
 
         void Action(string gesture)
@@ -94,6 +111,7 @@ namespace TextInput
             UpdateGUI();
         }
 
+        bool recogMode = false;
         string inputText = "";
         public bool OnKeyHook(int code, WM wParam, KBDLLHOOKSTRUCT lParam, Hooker hooker)
         {
@@ -103,7 +121,7 @@ namespace TextInput
                 case WM.SYSKEYDOWN:
                     try
                     {
-                        if (CanRecognize((int)lParam.vkCode))
+                        if (recogMode)
                         {
                             if (hooker.onAlt || hooker.onCtrl || hooker.onFn || hooker.onShift || hooker.onWin)
                                 return true;
@@ -115,7 +133,14 @@ namespace TextInput
                                 timer.Enabled = true;
                                 timer.Start();
                             }
+
                             return true;
+                        }
+                        else
+                        {
+                            recogMode = CanRecognize((int)lParam.vkCode);
+                            if (recogMode)
+                                DebugLog("Start gesture recognition");
                         }
                     }
                     catch (Exception e)
@@ -129,9 +154,6 @@ namespace TextInput
 
         bool CanRecognize(int vkCode)
         {
-            if (alwaysRecognition)
-                return true;
-
             if (shortcutKey == null)
                 return false;
 
@@ -152,7 +174,7 @@ namespace TextInput
 
             return true;
         }
-        
+
         //----------------------------------------------------------
 
         private void loadButton_Click(object sender, EventArgs e)
@@ -160,13 +182,13 @@ namespace TextInput
             if (File.Exists(gestureFile))
             {
                 trainData = SketchTypeCommand.LoadCommands(gestureFile, 64, 64);
-                textBox.Text += "load gestures: # = " + trainData.Count + "\n";
+                DebugLog("load gestures: # = " + trainData.Count);
             }
         }
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            string path = Path.GetFullPath("SketchTypinDataCollect.exe");
+            string path = Path.GetFullPath("SketchTypingDataCollect.exe");
             if (File.Exists(path) && File.Exists(gestureFile))
                 Process.Start(path, gestureFile);
         }
@@ -189,23 +211,6 @@ namespace TextInput
 
         //------------------------------------------------------
 
-        private void alwaysRButton_CheckedChanged(object sender, EventArgs e)
-        {
-            alwaysRecognition = GetRecognitionMode();
-            UpdateGUI();
-        }
-
-        private void shortcutRButton_CheckedChanged(object sender, EventArgs e)
-        {
-            alwaysRecognition = GetRecognitionMode();
-            UpdateGUI();
-        }
-
-        bool GetRecognitionMode()
-        {
-            return alwaysRButton.Checked;
-        }
-
         public class ShortcutKey
         {
             public bool ctrl = false;
@@ -220,18 +225,6 @@ namespace TextInput
                 this.key = key;
             }
         }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            threshold = GetThreshold();
-        }
-
-        private double GetThreshold()
-        {
-            return Math.Max(0, Math.Min(1, 0.01 * (double)thresholdNumeriUpDown.Value));
-        }
-
-        double threshold = 0.8;
 
         ShortcutKey GetShortcutKey()
         {
@@ -292,23 +285,11 @@ namespace TextInput
             else
                 loadButton.Enabled = true;
 
-            if (!File.Exists("SketchTypinDataCollect.exe"))
+            if (!File.Exists("SketchTypingDataCollect.exe"))
                 editButton.Enabled = false;
             else
                 editButton.Enabled = true;
 
- 
-            if (alwaysRecognition)
-            {
-                thresholdNumeriUpDown.Enabled = true;
-                ctrlCheckbox.Enabled = altCheckbox.Enabled = shiftCheckbox.Enabled = keyCombobox.Enabled = false;
-            }
-            else
-            {
-                thresholdNumeriUpDown.Enabled = false;
-                ctrlCheckbox.Enabled = altCheckbox.Enabled = shiftCheckbox.Enabled = keyCombobox.Enabled = true;
-            }
         }
-
     }
 }

@@ -55,7 +55,7 @@ namespace Browser
             }
             trainData = SketchTypeCommand.LoadCommands(gestureFile, 64, 64);
 
-            DebugLog("load train data: # = " + (trainData == null ? "null" : "" + trainData.Count));
+            DebugLog("load gestures: # = " + (trainData == null ? "null" : "" + trainData.Count));
 
             timer.Interval = 250;
             timer.Tick += new EventHandler(timer_Tick);
@@ -66,7 +66,7 @@ namespace Browser
         void DebugLog(string mes)
         {
             log.Text = mes;
-            textBox.Text = mes + "\n";
+            textBox.Text += mes + "\n";
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace Browser
             string gesture = sketchTyping.GetMatchingCommand(inputText, trainData, out cost);
             if (cost <= 1 - threshold)
                 Action(gesture);
-            DebugLog(string.Format("inputText = {0}, gesture = {1}, const = {2}\n", inputText, gesture, cost));
+            DebugLog(string.Format("inputText = {0}, gesture = {1}, const = {2}", inputText, gesture, cost));
             inputText = "";
             timer.Enabled = false;
         }
@@ -140,13 +140,13 @@ namespace Browser
             if (File.Exists(gestureFile))
             {
                 trainData = SketchTypeCommand.LoadCommands(gestureFile, 64, 64);
-                DebugLog("load gestures: # = " + trainData.Count + "\n");
+                DebugLog("load gestures: # = " + trainData.Count);
             }
         }
 
         private void editButton_Click(object sender, EventArgs e)
         {
-            string path = Path.GetFullPath("SketchTypinDataCollect.exe");
+            string path = Path.GetFullPath("SketchTypingDataCollect.exe");
             if (File.Exists(path) && File.Exists(gestureFile))
                 Process.Start(path, gestureFile);
         }
@@ -199,7 +199,7 @@ namespace Browser
             else
                 loadButton.Enabled = true;
 
-            if (!File.Exists("SketchTypinDataCollect.exe"))
+            if (!File.Exists("SketchTypingDataCollect.exe"))
                 editButton.Enabled = false;
             else
                 editButton.Enabled = true;

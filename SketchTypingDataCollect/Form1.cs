@@ -17,7 +17,28 @@ namespace SketchTypingDataCollect
         public Form1()
         {
             InitializeComponent();
-            gestureForm = new GestureForm(this);
+
+            try
+            {
+                gestureForm = new GestureForm(this);
+
+                var args = Environment.GetCommandLineArgs();
+                if (args.Length >= 2)
+                {
+                    if (string.IsNullOrWhiteSpace(args[1]))
+                        return;
+                    if (!args[1].EndsWith(".txt"))
+                        return;
+                    string path = System.IO.Path.GetFullPath(args[1]);
+                    if (System.IO.File.Exists(path))
+                        Open(path);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString() + e.StackTrace);
+                Application.Exit();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -114,15 +135,19 @@ namespace SketchTypingDataCollect
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 gesturePath = openFileDialog1.FileName;
-                commands = SketchTypeCommand.LoadCommands(gesturePath, imageList1.ImageSize.Width, imageList1.ImageSize.Height);
-                treeView1.Nodes.Clear();
-                foreach (var com in commands)
-                {
-                    treeView1.Nodes.Add(com.Text);
-                }
+                Open(gesturePath);
             }
         }
 
+        void Open(string gesturePath)
+        {
+            commands = SketchTypeCommand.LoadCommands(gesturePath, imageList1.ImageSize.Width, imageList1.ImageSize.Height);
+            treeView1.Nodes.Clear();
+            foreach (var com in commands)
+            {
+                treeView1.Nodes.Add(com.Text);
+            }
+        }
         private void listView1_KeyDown(object sender, KeyEventArgs e)
         {
             if (listView1.SelectedItems != null && listView1.SelectedItems.Count >= 1 && e.KeyCode == Keys.Delete)
