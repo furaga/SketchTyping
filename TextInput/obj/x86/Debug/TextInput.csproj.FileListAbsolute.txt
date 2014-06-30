@@ -1,0 +1,12 @@
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.csprojResolveAssemblyReference.cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.Form1.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.Properties.Resources.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.csproj.GenerateResource.Cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\TextInput.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\TextInput.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\FLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\SketchTypingLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\FLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\bin\Debug\SketchTypingLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\TextInput\obj\x86\Debug\TextInput.pdb

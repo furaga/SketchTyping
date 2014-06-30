@@ -1,0 +1,12 @@
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\Browser.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\Browser.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\FLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\SketchTypingLib.dll
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\FLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\bin\Debug\SketchTypingLib.pdb
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.csprojResolveAssemblyReference.cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.Form1.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.Properties.Resources.resources
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.csproj.GenerateResource.Cache
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.exe
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\Browser\obj\x86\Debug\Browser.pdb
