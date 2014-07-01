@@ -71,7 +71,7 @@
             // gestureComboBox
             // 
             this.gestureComboBox.FormattingEnabled = true;
-            this.gestureComboBox.Location = new System.Drawing.Point(12, 62);
+            this.gestureComboBox.Location = new System.Drawing.Point(12, 75);
             this.gestureComboBox.Name = "gestureComboBox";
             this.gestureComboBox.Size = new System.Drawing.Size(172, 20);
             this.gestureComboBox.TabIndex = 13;
@@ -79,7 +79,7 @@
             // 
             // loadButton
             // 
-            this.loadButton.Location = new System.Drawing.Point(190, 59);
+            this.loadButton.Location = new System.Drawing.Point(190, 72);
             this.loadButton.Name = "loadButton";
             this.loadButton.Size = new System.Drawing.Size(49, 23);
             this.loadButton.TabIndex = 14;
@@ -113,14 +113,14 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.textBox);
-            this.splitContainer1.Size = new System.Drawing.Size(307, 245);
-            this.splitContainer1.SplitterDistance = 160;
+            this.splitContainer1.Size = new System.Drawing.Size(307, 302);
+            this.splitContainer1.SplitterDistance = 199;
             this.splitContainer1.TabIndex = 15;
             // 
             // log
             // 
             this.log.AutoSize = true;
-            this.log.Location = new System.Drawing.Point(6, 145);
+            this.log.Location = new System.Drawing.Point(3, 184);
             this.log.Name = "log";
             this.log.Size = new System.Drawing.Size(35, 12);
             this.log.TabIndex = 26;
@@ -128,7 +128,7 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(245, 59);
+            this.editButton.Location = new System.Drawing.Point(245, 72);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(49, 23);
             this.editButton.TabIndex = 25;
@@ -139,7 +139,7 @@
             // shiftCheckbox
             // 
             this.shiftCheckbox.AutoSize = true;
-            this.shiftCheckbox.Location = new System.Drawing.Point(136, 120);
+            this.shiftCheckbox.Location = new System.Drawing.Point(136, 133);
             this.shiftCheckbox.Name = "shiftCheckbox";
             this.shiftCheckbox.Size = new System.Drawing.Size(48, 16);
             this.shiftCheckbox.TabIndex = 24;
@@ -150,7 +150,7 @@
             // altCheckbox
             // 
             this.altCheckbox.AutoSize = true;
-            this.altCheckbox.Location = new System.Drawing.Point(185, 120);
+            this.altCheckbox.Location = new System.Drawing.Point(185, 133);
             this.altCheckbox.Name = "altCheckbox";
             this.altCheckbox.Size = new System.Drawing.Size(39, 16);
             this.altCheckbox.TabIndex = 23;
@@ -163,7 +163,7 @@
             this.ctrlCheckbox.AutoSize = true;
             this.ctrlCheckbox.Checked = true;
             this.ctrlCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ctrlCheckbox.Location = new System.Drawing.Point(88, 120);
+            this.ctrlCheckbox.Location = new System.Drawing.Point(88, 133);
             this.ctrlCheckbox.Name = "ctrlCheckbox";
             this.ctrlCheckbox.Size = new System.Drawing.Size(43, 16);
             this.ctrlCheckbox.TabIndex = 22;
@@ -174,7 +174,7 @@
             // keyCombobox
             // 
             this.keyCombobox.FormattingEnabled = true;
-            this.keyCombobox.Location = new System.Drawing.Point(230, 118);
+            this.keyCombobox.Location = new System.Drawing.Point(230, 131);
             this.keyCombobox.Name = "keyCombobox";
             this.keyCombobox.Size = new System.Drawing.Size(64, 20);
             this.keyCombobox.TabIndex = 21;
@@ -184,7 +184,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 97);
+            this.label2.Location = new System.Drawing.Point(12, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 12);
             this.label2.TabIndex = 16;
@@ -193,7 +193,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 47);
+            this.label1.Location = new System.Drawing.Point(12, 60);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 12);
             this.label1.TabIndex = 15;
@@ -204,7 +204,7 @@
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox.Location = new System.Drawing.Point(0, 0);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(307, 81);
+            this.textBox.Size = new System.Drawing.Size(307, 99);
             this.textBox.TabIndex = 0;
             this.textBox.Text = "";
             // 
@@ -212,10 +212,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 245);
+            this.ClientSize = new System.Drawing.Size(307, 302);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "TextInput";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();

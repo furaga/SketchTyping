@@ -23,3 +23,7 @@ C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTy
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\SketchTypinVSExtension.latest.pkgdef
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\extension.vsixmanifest
 C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\bin\Debug\extension.vsixmanifest
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSCT.read.1.tlog
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSCT.write.1.tlog
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\VSPackage.resources.original
+C:\Users\furag_000\Dropbox\Research\SketchIntellisence\src\SketchTyping\SketchTypinVSExtension\obj\Debug\CtoResourceMerger.cache
